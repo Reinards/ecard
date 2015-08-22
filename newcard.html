@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta name="description" content="Generate beautfull E-Cards and give link to your chrush, wife, brother, sister or even your teacher... There is no cost!">
+		<meta name="keywords" content="generate.generator,beautifull,ecard,e-cards,ecards,e-cards,link,free,online">
+		<meta name="author" content="Reinards Janis Saulitis">
+
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+		<!--link rel="shortcut icon" type="image/png" href="fv.png"/-->
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<script>
+			$(document).ready(function() {
+	            $('.tooltip').tooltipster({
+	                animation: 'grow',
+	                position: 'top',
+	                theme: 'tooltipster-default',
+	                delay: 10
+	            });
+	            $(".bb").hide();
+	            $(".linkBox").hide();
+	        });
+
+		</script>
+
+		<title>E-card maker</title>
+	</head>
+	<body>
+
+		<header class="w3-container w3-light-green">
+		  <a href="index.html"><h1>E-card maker - <small>Simple, Beautifull, Free</small></h1></a>
+		</header>
+
+		<div class="linkBox">
+			<input type="text" class="link" autofocus="true" value="asd">
+		</div>
+		<div class="bb"></div>
+
+		<div class="w3-row" style="margin-top: 10px;">
+			<div class="w3-container w3-third">
+				<div class="textOpt">
+					<div class="w3-row">
+						<div class="w3-container w3-half">
+							<p id="t1" style="color: #3B3B3B;text-align:center;margin:0;">Size</p>
+							<input id="fsize" type="number" value="40" min="20" max="400">
+						</div>
+						<div class="w3-container w3-half">
+							<p id="t2" style="color: #3B3B3B;text-align:center;margin:0;">Font</p>
+							<input id="font" type="number" value="6" min="1" max="7">
+						</div>
+					</div>
+					<div class="w3-row">
+						<div class="w3-container w3-half">
+							<p id="t3" style="color: #3B3B3B;text-align:center;margin:0;">Align</p>
+							<input id="tAlign" type="number" value="2" min="1" max="3">
+						</div>
+						<div class="w3-container w3-half">
+							<p id="t4" style="color: #3B3B3B;text-align:center;margin:0;">Effect</p>
+							<input id="tEffect" type="number" value="0" min="0" max="7">
+						</div>
+					</div>
+					<p id="t5" style="color: #3B3B3B;text-align:center;margin:0;">Position Horizontal</p>
+					<input id="tX" type="number" value="0" min="0" max="500">
+					<p id="t6" style="color: #3B3B3B;text-align:center;margin:0;">Position Vertical</p>
+					<input id="tY" type="number" value="0" min="0" max="500">
+					<p id="t7" style="color: #3B3B3B;text-align:center;margin:0;margin-top:10px;">Color</p>
+					<input id="tColor" type="color" value="#013a4a">
+
+					<p id="t8" style="color: #3B3B3B;text-align:center;margin:0;margin-top:10px;">Text</p>
+					<input id="text" type="text" placeholder="Your text" value="Happy Birthday!">
+				</div>
+				<div class="cardColor">
+					<div class="w3-row">
+						<div class="w3-container w3-half">
+							<p id="t9" style="color: #3B3B3B;text-align:center;margin:0;margin-top:10px;">Cards Color</p>
+							<input id="ccolor" type="color" value="#3fb9cc">
+						</div>
+						<div class="w3-container w3-half">
+							<p id="t10" style="color: #3B3B3B;text-align:center;margin:0;margin-top:10px;">Pages Color</p>
+							<input id="pcolor" type="color" value="#A1D890">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-container w3-third">
+
+				<div class="stickers">
+					<p id="t11" style="color: #3B3B3B;text-align:center;margin:0;">Background Texture</p>
+					<input id="bgtex" type="number" value="5" min="0" max="11">
+					<p id="t12" style="color: #3B3B3B;text-align:center;margin:0;">Stickers number</p>
+					<input id="sticker" type="number" value="39" min="0" max="40">
+					<p id="t13" style="color: #3B3B3B;text-align:center;margin:0;">Stickers width</p>
+					<input id="stWidth" type="number" value="200" min="0" max="500">
+					<p id="t14" style="color: #3B3B3B;text-align:center;margin:0;">Stickers height</p>
+					<input id="stHeight" type="number" value="200" min="0" max="500">
+					<p id="t15" style="color: #3B3B3B;text-align:center;margin:0;">Position Horizontal</p>
+					<input id="stX" type="number" value="20" min="-100" max="500">
+					<p id="t16" style="color: #3B3B3B;text-align:center;margin:0;">Position Vertical</p>
+					<input id="stY" type="number" value="108" min="-100" max="500">
+				</div>
+				<div id="bcol" style="height:150px;" class="cardColor">
+					<p id="t17" style="color: #3B3B3B;text-align:center;margin:0;margin-top:10px;">Color of border</p>
+					<input id="bordcol" type="color" value="#000000">
+					<p id="t18" style="color: #3B3B3B;text-align:center;margin:0;margin-top:10px;">Size of border</p>
+					<input id="bordsize" type="number" value="4" min="1" max="8">
+				</div>
+			</div>
+			<div class="w3-container w3-third">
+				<div class="makeCard tooltip" title="Click to get link!">
+					<p class="cardText">Happy Birthday!</p>
+				</div>			
+				<div id="shadowb" onclick="setshadow()" class="bbox">Shadow</div>
+				<div id="borderb" onclick="setborder()" class="bbox">Border</div>
+				<div id="valign" onclick="setValign()" class="bbox">Vertically centered</div>
+				<input name="from" style="margin-top:10px;width:100%;" id="from" type="text" placeholder="From...">
+				<input name="to" style="margin-top:10px;width:100%;" id="to" type="text" placeholder="To...">
+				<a href="#" target="preview" id="preview">Preview</a>
+				<div style="color:white; background-color:#8C1414;width:100%;"id="borderb" onclick="transl()" class="bbox">Tulkot latviski</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
