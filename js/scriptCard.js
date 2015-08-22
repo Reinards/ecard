@@ -51,7 +51,7 @@ function setCard(){
 			document.title = "No "+from+", "+to+"!"
 		}
 
-		if(color[0] == ">"){
+		if(color[0] == "Q"){
 			color = color.replace('Q','#');
 			$(".cardtxt").css("color", color);
 		}else $(".cardtxt").css("color", color);
@@ -62,12 +62,12 @@ function setCard(){
 
 		$(".cardtxt").css("text-align", align);
 
-		if(bgcard[0] == ">"){
+		if(bgcard[0] == "Q"){
 			bgcard = bgcard.replace('Q','#');
 			$(".card").css("background-color", bgcard);
 		}else $(".card").css("background-color", bgcard);
 
-		if(bgbg[0] == ">"){
+		if(bgbg[0] == "Q"){
 			bgbg = bgbg.replace('Q','#');
 			$("body").css("background-color", bgbg);
 		}else $("body").css("background-color", bgbg);
