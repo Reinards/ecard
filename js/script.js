@@ -29,7 +29,7 @@ var to = "You";
 
 var translate=false;
 
-var link="http://www.ecard.hol.es/card.html/";
+var link="http://reinards.github/ecard/card.html/";
 
 function textProp(){
 	text();
